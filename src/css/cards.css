@@ -1,0 +1,61 @@
+.card1{
+    height: 265px;
+    width: 200px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin:10px;
+    display: inline-block;
+}
+.card1:hover{
+    animation: cd 0.4s ease-in;
+    transform: scale(1.1) ;
+}
+.img-set{
+    width: 100% !important;
+    height:200px;
+    object-fit: cover;
+}
+.text-style{
+    text-align: center;
+    padding: 10px;
+}
+/* .img-set:hover{
+    height: 0px;
+} */
+@keyframes cd{
+    0%{
+transform: scale(1) ;
+    }
+    100%{
+    transform: scale(1.1) ;
+    }
+}
+.flip{
+    height: 265px;
+    width: 200px;
+    /* background-color: white; */
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+    margin:10px;
+    display: inline-block;
+}
+
+/* .flip {
+    height: 199px;
+    width: 300px;
+    margin: 0 auto;
+} */
+/* .flip img {
+    width: 300px;
+    height: auto;
+} */
+.flip .back {
+    background: #2184cd;
+    height:100%;
+    color: #fff;
+    text-align: center;
+}
+.flip .img-set-flip{
+    width: 100% !important;
+    height:100%;
+    object-fit: cover;
+}

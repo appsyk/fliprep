@@ -1,0 +1,63 @@
+<html>
+
+<head>
+    <title>
+        flinnPrep Test
+    </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/cards.css" />
+    <link rel="stylesheet" href="../css/Main.css" />
+
+</head>
+
+<body>
+    <div>
+        <nav class="navbar navbar-light bg-light, nav-background ">
+            <a class="navbar-brand" href="#"><img src="https://www.flinnprep.com/Assets/Images/updated%20flinnprep%20logo.png"
+                    height="37px"></a>
+            <button class="float-right butt">Login</button>
+        </nav>
+    </div>
+    <div class="row">
+        <div class="col-sm-12 col-md-3 col-lg-3, left-menu">
+            <p id="left-list" class='left-list'></p>
+        </div>
+        <div class="col-sm-12 col-md-9 col-lg-12, main-content">
+            <h3 id="">Cards
+                <hr style="border-top: 3px solid rgb(22, 21, 21) ">
+            </h3>
+            <div id="cardz12"></div>
+
+            <div class="flip">
+                <div class="front">
+                    <img src='https://images.pexels.com/photos/68147/waterfall-thac-dray-nur-buon-me-thuot-daklak-68147.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500'
+                        class='img-set-flip' /> </div>
+                <div class="back">
+                    <h3>Some Text in the Back!</h3>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>
+<script src="./leftMenus.js"></script>
+<script src='./cardData.js'></script>
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="../jquery.flip.min.js"></script>
+<script>
+    $(function () {
+        $(".flip").flip({
+            //     trigger: 'hover'
+            axis: "y", // y or x
+            reverse: true, // true and false
+            trigger: "click", // click or hover
+            speed: '800',
+            front: $('.img-set-flip'),
+            back: $('.back'),
+            autoSize: false
+        });
+
+    });
+</script>

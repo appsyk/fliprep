@@ -1,0 +1,109 @@
+body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+.text-fam{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+.nav-background{
+    background-color: rgb(236, 232, 232);
+    box-shadow:0px 7px 5px rgb(180, 180, 180);
+
+}
+.left-menu{
+    background-color: rgb(67, 74, 77);
+    color: white;
+    height:100%;
+    padding-right:0px !important;
+    padding-left:0px !important;
+
+}
+.butleft{
+
+}
+.left-list{
+text-align: left;
+height: 10%;
+list-style-type: none;
+color: aliceblue;
+padding-top: 5%;
+}
+.bording{
+    border-bottom: 1px white;
+}
+.butt,
+  butt:visited,
+  butt:link{
+  background-color: aliceblue;
+  text-decoration: none;
+  display: inline-block;
+  color: darkslategray
+}
+.butt:hover{
+
+}
+
+/* li {
+    border-bottom: 1px solid white;
+  } */
+  p#left-list a{
+      color: white;
+      margin-left:5%;
+      font-size:.8em;
+
+  }
+  p#left-list i{
+    margin-left:25%;
+    font-size:1.2em;
+
+}
+p#left-list hr{
+    border-top: 1px solid white;
+width:100%;
+}
+/* p#left-list:active{
+    background-color: green;
+} */
+.main-content{
+    /* margin: 1%; */
+    margin-top: 10px;
+}
+/* #accordion > div{
+    padding:10px;
+    list-style-type: none;
+    background-color: rgb(184, 170, 170);
+margin-bottom: 5px;    
+} */
+#accordion > div > h4{
+    background-color: grey !important;
+    padding:10px;
+    cursor: pointer; 
+}
+#accordion > div > h4 > div > p{
+    padding:10px;
+    background-color: rgb(197, 190, 190);
+}
+
+.pic-test{
+    height:200px;
+    display: inline-block;
+    animation-delay: 0.7s;
+    margin-bottom: 5px;
+}
+.pic-test:hover{
+    transform: scale(2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    /* box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2), 0 7px 23px 0 rgba(0, 0, 0, 0.19); */
+    animation: image-anime 0.8s ease-out;
+}
+@keyframes image-acime{
+    0%{
+        transform: scale(1);
+    }
+    80%{
+        transform: scale(2.13);
+    }
+  
+    100%{
+        transform: scale(2);
+    }
+}

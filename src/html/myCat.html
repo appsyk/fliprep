@@ -1,0 +1,55 @@
+<html>
+
+<head>
+    <title>
+        flinnPrep Test
+    </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/Main.css" />
+</head>
+
+<body>
+    <div>
+        <nav class="navbar navbar-light bg-light, nav-background ">
+            <a class="navbar-brand" href="#"><img src="https://www.flinnprep.com/Assets/Images/updated%20flinnprep%20logo.png"
+                    height="37px"></a>
+            <button class="float-right butt">Login</button>
+        </nav>
+    </div>
+    <div class="row">
+        <div class="col-sm-12 col-md-3 col-lg-3, left-menu">
+            <p id="left-list" class='left-list'></p>
+        </div>
+        <div class="col-sm-12 col-md-9 col-lg-12, main-content">
+            <h3 id="">My courses
+                <hr style="border-top: 3px solid rgb(22, 21, 21) ">
+            </h3>
+            
+</body>
+
+</html>
+<script src="./leftMenus.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script>
+    $( function() {
+    $( "#accordion" )
+      .accordion({
+        header: "> div > h4"
+      })
+      .sortable({
+        axis: "y",
+        handle: "h4",
+        stop: function( event, ui ) {
+          // IE doesn't register the blur when sorting
+          // so trigger focusout handlers to remove .ui-state-focus
+          ui.item.children( "h4" ).triggerHandler( "focusout" );
+ 
+          // Refresh accordion to handle new order
+          $( this ).accordion( "refresh" );
+        }
+      });
+  } );
+</script>
