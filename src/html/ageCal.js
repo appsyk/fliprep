@@ -62,4 +62,4 @@ if( date2.getMonth() == 0 || 2 || 4 || 6 || 7 || 9 || 11 ){
 var diffDays = 31 - dating;
 console.log(diffDays)
 // console.log('diffdays',diffDays, '1',date1, '------',date2)
-//55
+//5555555555555555555555555555555555555555555555555555
